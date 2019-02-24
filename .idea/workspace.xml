@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5c5eb68-0039-434e-92c0-0608e7154f34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskusers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="d5c5eb68-0039-434e-92c0-0608e7154f34" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,12 +276,12 @@
       <workItem from="1550532921911" duration="3104000" />
       <workItem from="1550588371718" duration="2011000" />
       <workItem from="1551021048305" duration="6295000" />
-      <workItem from="1551035154708" duration="2465000" />
+      <workItem from="1551035154708" duration="2716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13875000" />
+    <option name="totallyTimeSpent" value="14126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
