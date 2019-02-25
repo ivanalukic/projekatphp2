@@ -15,9 +15,9 @@ class CreateConditionsTable extends Migration
     {
         Schema::create('conditions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('condition');
+            $table->string('name');
             $table->unsignedInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('Company');
+            $table->foreign('company_id')->references('id')->on('companies');
             $table->timestamps();
         });
     }

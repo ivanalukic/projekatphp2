@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAnnoucementconditionsTable extends Migration
+class CreateCandidateconditionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateAnnoucementconditionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('annoucementconditions', function (Blueprint $table) {
+        Schema::create('candidate_condition', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('condition_id');
             $table->foreign('condition_id')->references('id')->on('conditions');
-            $table->unsignedInteger('annoucement_id');
-            $table->foreign('annoucement_id')->references('id')->on('annoucements');
+            $table->unsignedInteger('candidate_id');
+            $table->foreign('candidate_id')->references('id')->on('candidates');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateAnnoucementconditionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('annoucementconditions');
+        Schema::dropIfExists('candidate_condition');
     }
 }

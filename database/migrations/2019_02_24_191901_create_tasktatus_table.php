@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFormfieldsTable extends Migration
+class CreateTasktatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateFormfieldsTable extends Migration
      */
     public function up()
     {
-        Schema::create('formfields', function (Blueprint $table) {
+        Schema::create('task_statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateFormfieldsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('formfields');
+        Schema::dropIfExists('task_statuses');
     }
 }

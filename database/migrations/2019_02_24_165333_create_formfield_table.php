@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTaskstatusesTable extends Migration
+class CreateFormfieldTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateTaskstatusesTable extends Migration
      */
     public function up()
     {
-        Schema::create('taskstatuses', function (Blueprint $table) {
+        Schema::create('form_field', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('status');
+            $table->unsignedInteger('form_id');
+            $table->foreign('form_id')->references('id')->on('forms');
+            $table->unsignedInteger('field_id');
+            $table->foreign('field_id')->references('id')->on('fields');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateTaskstatusesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taskstatuses');
+        Schema::dropIfExists('form_field');
     }
 }

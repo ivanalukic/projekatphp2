@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c5eb68-0039-434e-92c0-0608e7154f34" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_company_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_joboffers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementcondition_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidateconditions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateforms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +44,68 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="prodavnica@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="prodavnica@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bazaprojekat@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,27 +117,48 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154023_create_roles_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_company_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_user_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskusers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidateconditions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateforms_table.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_joboffers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_133309_make_fk_for_users.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementcondition_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_job_offers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_job_offer_condition_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateform_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php" />
       </list>
     </option>
   </component>
@@ -177,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,22 +284,10 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,17 +327,18 @@
       <workItem from="1550532921911" duration="3104000" />
       <workItem from="1550588371718" duration="2011000" />
       <workItem from="1551021048305" duration="6295000" />
-      <workItem from="1551035154708" duration="3860000" />
+      <workItem from="1551035154708" duration="8856000" />
+      <workItem from="1551095885461" duration="10894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15270000" />
+    <option name="totallyTimeSpent" value="31160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33585477" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03706505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -273,25 +351,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20621932" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3420622" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.056732222" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.06732224" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -299,55 +371,32 @@
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/907c8d11-cd22-4da8-85a8-a6bc30c33ce2/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" />
     <entry file="uml://DATABASE/907c8d11-cd22-4da8-85a8-a6bc30c33ce2.SCHEMA:prodavnica">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
           <OriginalElement>907c8d11-cd22-4da8-85a8-a6bc30c33ce2.SCHEMA:prodavnica</OriginalElement>
           <nodes>
-            <node x="1.5" y="0.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.anketa</node>
-            <node x="359.0" y="565.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.navigacija</node>
-            <node x="182.0" y="124.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnici</node>
-            <node x="0.0" y="565.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.galerija</node>
-            <node x="183.0" y="565.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.autor</node>
-            <node x="565.0" y="565.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.slajder</node>
-            <node x="0.0" y="190.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.odgovori</node>
-            <node x="399.0" y="0.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.kategorije</node>
-            <node x="75.0" y="402.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnik_odgovor</node>
-            <node x="397.0" y="124.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.proizvodi</node>
-            <node x="195.0" y="0.0">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.uloga</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.anketa</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.navigacija</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.galerija</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.autor</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.slajder</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.kategorije</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.odgovori</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnici</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnik_odgovor</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.proizvodi</node>
+            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.uloga</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnik_odgovor" target="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.odgovori">
-              <point x="-49.5" y="-59.0" />
-              <point x="124.5" y="377.0" />
-              <point x="81.0" y="377.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.odgovori" target="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.anketa">
-              <point x="0.0" y="-48.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnik_odgovor" target="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnici">
-              <point x="49.5" y="-59.0" />
-              <point x="223.5" y="377.0" />
-              <point x="267.0" y="377.0" />
-              <point x="0.0" y="114.0" />
-            </edge>
-            <edge source="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.proizvodi" target="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.kategorije">
-              <point x="0.0" y="-103.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnici" target="907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.uloga">
-              <point x="0.0" y="-114.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7625698324022346" x="305.0" y="324.0" />
-          <SelectedNodes>
-            <node>907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.uloga</node>
-          </SelectedNodes>
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5986206896551725" x="638.0" y="353.0" />
+          <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
@@ -356,167 +405,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/907c8d11-cd22-4da8-85a8-a6bc30c33ce2/console.sql">
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/325deaf9-b1e3-44e0-be3e-0398b6a1206d/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_154023_create_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="204">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_company_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="256">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_133309_make_fk_for_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="170">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="202">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_job_offers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="306">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="452">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="125">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="289">
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+        <state relative-caret-position="51">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_job_offer_condition_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="335">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskusers_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="492">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="472">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="272">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateform_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/325deaf9-b1e3-44e0-be3e-0398b6a1206d">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>325deaf9-b1e3-44e0-be3e-0398b6a1206d</OriginalElement>
+          <nodes>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.migrations</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidate_form</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.companies</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.tasks</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_difficulties</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.types</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidate_condition</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.options</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.fields</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_comments</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.professions</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.condition_profession</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.forms</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_user</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.job_offer_condition</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.form_field</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.roles</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_statuses</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidates</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.user_logs</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.user_statuses</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.users</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.job_offers</node>
+            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.conditions</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.4809690601284298" x="819.3486739032578" y="851.9368914817296" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>

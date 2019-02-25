@@ -17,13 +17,13 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->date('from');
-            $table->date('by');
+            $table->date('start_date');
+            $table->date('end_date');
             $table->integer('count');
-            $table->unsignedInteger('difficulty_id');
-            $table->foreign('difficulty_id')->references('id')->on('difficulties');
-            $table->unsignedInteger('status_id');
-            $table->foreign('status_id')->references('id')->on('taskstatuses');
+            $table->unsignedInteger('task_difficulties_id');
+            $table->foreign('task_difficulties_id')->references('id')->on('task_difficulties');
+            $table->unsignedInteger('task_statuses_id');
+            $table->foreign('task_statuses_id')->references('id')->on('task_statuses');
             $table->timestamps();
         });
     }
