@@ -20,10 +20,10 @@ class CreateTasksTable extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('count');
-            $table->unsignedInteger('task_difficulties_id');
-            $table->foreign('task_difficulties_id')->references('id')->on('task_difficulties');
-            $table->unsignedInteger('task_statuses_id');
-            $table->foreign('task_statuses_id')->references('id')->on('task_statuses');
+            $table->unsignedInteger('task_difficulty_id');
+            $table->foreign('task_difficulty_id')->references('id')->on('task_difficulties');
+            $table->unsignedInteger('task_status_id');
+            $table->foreign('task_status_id')->references('id')->on('task_statuses');
             $table->timestamps();
         });
     }
