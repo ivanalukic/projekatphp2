@@ -990,7 +990,7 @@
     <table id="250" parent="4" name="candidate_condition">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="251" parent="4" name="candidate_form">
+    <table id="251" parent="4" name="candidate_form_field">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
     <table id="252" parent="4" name="candidates">
@@ -1154,11 +1154,11 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="291" parent="251" name="candidate_form_form_field_id_foreign">
+    <index id="291" parent="251" name="candidate_form_field_form_field_id_foreign">
       <ColNames>form_field_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="292" parent="251" name="candidate_form_candidate_id_foreign">
+    <index id="292" parent="251" name="candidate_form_field_candidate_id_foreign">
       <ColNames>candidate_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1167,13 +1167,13 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="294" parent="251" name="candidate_form_form_field_id_foreign">
+    <foreign-key id="294" parent="251" name="candidate_form_field_form_field_id_foreign">
       <ColNames>form_field_id</ColNames>
       <RefSchemaName>bazaprojekat</RefSchemaName>
       <RefTableName>form_field</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="295" parent="251" name="candidate_form_candidate_id_foreign">
+    <foreign-key id="295" parent="251" name="candidate_form_field_candidate_id_foreign">
       <ColNames>candidate_id</ColNames>
       <RefSchemaName>bazaprojekat</RefSchemaName>
       <RefTableName>candidates</RefTableName>
@@ -1206,7 +1206,7 @@
     </column>
     <column id="300" parent="252" name="avg_rating">
       <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1632,7 +1632,7 @@
     </column>
     <column id="377" parent="260" name="is_active">
       <Position>8</Position>
-      <DataType>blob|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -2008,13 +2008,13 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="445" parent="269" name="task_difficulties_id">
+    <column id="445" parent="269" name="task_difficulty_id">
       <Position>7</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="446" parent="269" name="task_statuses_id">
+    <column id="446" parent="269" name="task_status_id">
       <Position>8</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -2030,12 +2030,12 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="449" parent="269" name="tasks_task_difficulties_id_foreign">
-      <ColNames>task_difficulties_id</ColNames>
+    <index id="449" parent="269" name="tasks_task_difficulty_id_foreign">
+      <ColNames>task_difficulty_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="450" parent="269" name="tasks_task_statuses_id_foreign">
-      <ColNames>task_statuses_id</ColNames>
+    <index id="450" parent="269" name="tasks_task_status_id_foreign">
+      <ColNames>task_status_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="451" parent="269" name="PRIMARY">
@@ -2043,14 +2043,14 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="452" parent="269" name="tasks_task_difficulties_id_foreign">
-      <ColNames>task_difficulties_id</ColNames>
+    <foreign-key id="452" parent="269" name="tasks_task_difficulty_id_foreign">
+      <ColNames>task_difficulty_id</ColNames>
       <RefSchemaName>bazaprojekat</RefSchemaName>
       <RefTableName>task_difficulties</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="453" parent="269" name="tasks_task_statuses_id_foreign">
-      <ColNames>task_statuses_id</ColNames>
+    <foreign-key id="453" parent="269" name="tasks_task_status_id_foreign">
+      <ColNames>task_status_id</ColNames>
       <RefSchemaName>bazaprojekat</RefSchemaName>
       <RefTableName>task_statuses</RefTableName>
       <RefColNames>id</RefColNames>

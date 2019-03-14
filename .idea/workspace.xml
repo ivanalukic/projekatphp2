@@ -2,24 +2,304 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c5eb68-0039-434e-92c0-0608e7154f34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/CompanyJobOffer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/JobOfferController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Condition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/JobOffer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Profession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TaskDifficulty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TaskStatuses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/dto/JobOfferDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CandidatesFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CompaniesFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ConditionsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/FieldsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/FormsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/JobOffersFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ProfessionsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TasksFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/UserLogsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_140653_create_task_priorities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ConditionTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/JobOffersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TaskPrioritiesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TaskStatusesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TasksTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TruncateDBSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/font-face.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-100italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-200italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-300italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-500italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-600italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-700italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-800italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-900italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/poppins/poppins-v5-latin-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg-title-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg-title-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/Untitled-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/avatar-big-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/logo-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/logo-mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/job_offer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/animsition/animsition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/animsition/animsition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/bootstrap-4.1/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/bootstrap-4.1/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/bootstrap-4.1/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/bootstrap-progressbar/bootstrap-progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/chartjs/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/circle-progress/circle-progress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/circle-progress/circle-progress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/countdown/countdowntime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/countdown/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/countdown/moment-timezone-with-data.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/countdown/moment-timezone.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/countdown/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/counter-up/jquery.counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/counter-up/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/counter-up/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/font-awesome-5/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox-plus-jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/dist/js/lightbox.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/lightbox2/src/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/perfect-scrollbar/perfect-scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/progressbar/progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/progressbar/progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/config.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/fonts/slick.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/fonts/slick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/fonts/slick.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/fonts/slick.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick-theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/slick/slick.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/smk-accordion/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/smk-accordion/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/smk-accordion/accordion.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/sweetalert/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.brazil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.france.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.germany.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.russia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/vector-map/jqvmap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/wow/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor2/wow/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/end.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/header2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inc/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/back.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/all_job_offers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/company_job_offers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/create_job_offer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/my_job_offers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pagesFront/all_job_offers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/325deaf9-b1e3-44e0-be3e-0398b6a1206d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/325deaf9-b1e3-44e0-be3e-0398b6a1206d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_company_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_joboffers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementcondition_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidateconditions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateforms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UsersFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_154023_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_154219_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_165324_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_24_164935_create_user_statuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_122551_create_professions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_job_offers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_123439_create_job_offers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_125739_create_conditions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_133338_create_condition_profession_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_job_offer_condition_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_133713_create_job_offer_condition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_133929_create_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_134452_create_fields_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_134532_create_forms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_134640_create_form_field_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_135020_create_options_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_135113_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_135830_create_candidate_condition_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidate_form_field_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_140049_create_ratings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_140508_create_task_statuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_140816_create_tasks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_141644_create_task_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_141732_create_user_logs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_142142_create_task_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_25_133309_make_fk_for_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_125202_create_fk_for_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CompaniesTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ProfessionsTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserstatusesTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,102 +326,71 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="bazaprojekat@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="prodavnica@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/FormsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="288">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#6#28#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php">
+        <entry file="file://$PROJECT_DIR$/database/factories/FormsFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="136">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <element signature="e#7#27#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/FieldsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidate_form_field_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state>
+              <caret selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#28#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>banner</find>
+      <find>dd()</find>
+      <find>$model</find>
+      <find>dd(</find>
+      <find>dd</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,53 +398,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/database/factories/UserLogsFactory.php" />
+        <option value="$PROJECT_DIR$/app/Models/Tasks.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UserStatusesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ConditionsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ConditionTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Models/Conditions.php" />
+        <option value="$PROJECT_DIR$/app/Models/Profession.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154023_create_roles_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_company_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_user_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidtes_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskusers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionsprofessions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementconditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_taskstatuses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidteforms_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfields_table.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidteconditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidateconditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateforms_table.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatus_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_annoucements_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_joboffers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_133309_make_fk_for_users.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_annoucementcondition_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_job_offers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_job_offer_condition_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidateform_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidate_form_field_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/UserLogs.php" />
+        <option value="$PROJECT_DIR$/app/Models/UserLog.php" />
+        <option value="$PROJECT_DIR$/database/seeds/JobOffersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/TasksTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/JobOfferController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Back/BackController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/create_job_offer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/back.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_135113_create_candidates_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_134532_create_forms_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_133713_create_job_offer_condition.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_135830_create_candidate_condition_table.php" />
+        <option value="$PROJECT_DIR$/database/factories/UsersFactory.php" />
+        <option value="$PROJECT_DIR$/app/Models/Condition.php" />
+        <option value="$PROJECT_DIR$/resources/views/inc/end.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Back/OfferController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Back/JobOfferController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Front/FrontController.php" />
+        <option value="$PROJECT_DIR$/app/Models/dto/JobOfferDto.php" />
+        <option value="$PROJECT_DIR$/app/Helpers/JobOfferHelper.php" />
+        <option value="$PROJECT_DIR$/public/js/job_offer.js" />
+        <option value="$PROJECT_DIR$/resources/views/inc/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Back/CompanyJobOffer.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/company_job_offers.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Front/JobOfferController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/JobOfferController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pagesFront/all_job_offers.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/inc/header2.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/my_job_offers.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/JobOffer.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/all_job_offers.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Type.php" />
+        <option value="$PROJECT_DIR$/database/seeds/TypesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Models/Field.php" />
+        <option value="$PROJECT_DIR$/database/factories/FieldsFactory.php" />
+        <option value="$PROJECT_DIR$/database/seeds/FieldsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Models/Form.php" />
+        <option value="$PROJECT_DIR$/database/seeds/FormsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/factories/FormsFactory.php" />
       </list>
     </option>
   </component>
@@ -302,7 +555,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,18 +565,29 @@
             <path>
               <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjekatZaSkolu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjekatZaSkolu" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,6 +595,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\database" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\app" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\database\factories" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\database\migrations" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\database\seeds" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\app\Models" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\app\Http\Controllers\Back" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\app\Http\Controllers\Front" />
+      <recent name="C:\xampp\htdocs\ProjekatZaSkolu\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -365,22 +645,32 @@
       <workItem from="1550588371718" duration="2011000" />
       <workItem from="1551021048305" duration="6295000" />
       <workItem from="1551035154708" duration="8856000" />
-      <workItem from="1551095885461" duration="12603000" />
+      <workItem from="1551095885461" duration="13360000" />
+      <workItem from="1551135781701" duration="3029000" />
+      <workItem from="1551181217347" duration="13929000" />
+      <workItem from="1551218162376" duration="10447000" />
+      <workItem from="1551261558377" duration="590000" />
+      <workItem from="1551270570449" duration="5245000" />
+      <workItem from="1551461397656" duration="162000" />
+      <workItem from="1551703181337" duration="8361000" />
+      <workItem from="1551712000186" duration="17082000" />
+      <workItem from="1551821646474" duration="10740000" />
+      <workItem from="1551866333505" duration="81474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32869000" />
+    <option name="totallyTimeSpent" value="184685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -389,301 +679,386 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.39443535" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3420622" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.0883797" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.3846154" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.06732224" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.027987897" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-    <entry file="file://$PROJECT_DIR$/public/index.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_125739_create_conditions_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_133713_create_job_offer_condition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_123439_create_job_offers_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/907c8d11-cd22-4da8-85a8-a6bc30c33ce2/console.sql">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_135113_create_candidates_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="100" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_135830_create_candidate_condition_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_18_234223_pravljenje_baze.php" />
-    <entry file="uml://DATABASE/907c8d11-cd22-4da8-85a8-a6bc30c33ce2.SCHEMA:prodavnica">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>907c8d11-cd22-4da8-85a8-a6bc30c33ce2.SCHEMA:prodavnica</OriginalElement>
-          <nodes>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.anketa</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.navigacija</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.galerija</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.autor</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.slajder</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.kategorije</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.odgovori</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnici</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.korisnik_odgovor</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.proizvodi</node>
-            <node x="" y="">907c8d11-cd22-4da8-85a8-a6bc30c33ce2.TABLE:prodavnica.uloga</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5986206896551725" x="638.0" y="353.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Front/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#46#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Profession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/create_job_offer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="39" column="94" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Candidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Back/BackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Condition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Back/OfferController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inc/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Back/JobOfferController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#45#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/dto/JobOfferDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Back/CompanyJobOffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+          <folding>
+            <element signature="e#128#153#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/company_job_offers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Front/JobOfferController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#129#154#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inc/end.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/job_offer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pagesFront/all_job_offers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#274#297#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/my_job_offers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Helpers/JobOfferHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#114#145#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/JobOfferController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/all_job_offers.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RolesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <element signature="e#7#37#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserStatusesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UsersFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inc/header2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/CompaniesFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/TypesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/JobOffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#30#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/JobOffersFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ConditionsFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/TaskStatusesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/TasksTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="271">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Models/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/database/factories/FieldsFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/325deaf9-b1e3-44e0-be3e-0398b6a1206d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_154023_create_roles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_154143_create_companies_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_133309_make_fk_for_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_155556_create_userstatuses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_155938_create_professions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161732_create_job_offers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164747_create_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_161856_create_conditions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191103_create_options_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_153801_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state>
+          <caret selection-end-line="11" selection-end-column="3" />
           <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
+            <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165140_create_forms_table.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/FieldsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164902_create_fields_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_164418_create_job_offer_condition_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/325deaf9-b1e3-44e0-be3e-0398b6a1206d">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>325deaf9-b1e3-44e0-be3e-0398b6a1206d</OriginalElement>
-          <nodes>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.migrations</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidate_form</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.companies</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.tasks</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_difficulties</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.types</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidate_condition</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.options</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.fields</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_comments</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.professions</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.condition_profession</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.forms</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_user</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.job_offer_condition</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.form_field</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.roles</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.task_statuses</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.candidates</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.user_logs</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.user_statuses</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.users</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.job_offers</node>
-            <node x="" y="">325deaf9-b1e3-44e0-be3e-0398b6a1206d.TABLE:bazaprojekat.conditions</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.4809690601284298" x="819.3486739032578" y="851.9368914817296" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <caret selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#28#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_163802_create_conditionprofession_table.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/TaskPrioritiesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/JobOffersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="195">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193805_create_comments_table.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/FormsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="288">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#6#28#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193705_create_logs_table.php">
+    <entry file="file://$PROJECT_DIR$/database/factories/FormsFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193340_create_taskuser_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193137_create_tasks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_193042_create_difficulties_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191901_create_tasktatus_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191441_create_candidatecondition_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_165333_create_formfield_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191725_create_candidate_form_field_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_24_191240_create_candidates_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#7#27#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
