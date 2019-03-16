@@ -1,4 +1,18 @@
 @extends('layouts.back')
+@section('select')
+    <form class="form-header" action="" method="POST">
+        <div class="row" style="width:400px;">
+            <div class="col-md-12">
+                <select name="prof" id="prof" class="form-control" onChange="select()">
+                    <option value="0">Please select</option>
+                    @foreach($professions as $p)
+                        <option value="{{$p->id}}">{{$p->name}}</option>
+                        @endforeach
+                </select>
+            </div>
+        </div>
+    </form>
+@endsection
 @section('content')
 <!-- MAIN CONTENT-->
 <div class="main-content">
@@ -80,6 +94,11 @@ $(document).ready(function () {
   module.all();
 })
 
-
+function select(){
+    let lista=document.getElementById("prof");
+    let selektovani=lista.selectedIndex;
+    let vrednost=lista.options[selektovani].value;
+    console.log(vrednost)
+}
 </script>
 @endsection

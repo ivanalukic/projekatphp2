@@ -11,6 +11,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Models\Condition;
 use App\Models\JobOffer;
+use App\Models\Profession;
 
 class JobOfferController extends FrontController
 {
@@ -19,6 +20,8 @@ class JobOfferController extends FrontController
         $conditions=new Condition();
         $rez=$joboffer->getAll();
         $cond=$conditions->getCond();
-        return view('pagesFront.all_job_offers',['offers'=>$rez,'condition'=>$cond]);
+        $prof=new Profession();
+        $niz=$prof->getProfessions();
+        return view('pagesFront.all_job_offers',['offers'=>$rez,'condition'=>$cond,'professions'=>$niz]);
     }
 }

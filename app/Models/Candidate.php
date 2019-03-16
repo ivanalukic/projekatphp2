@@ -13,4 +13,7 @@ class Candidate extends Model
     public function conditions() {
         return $this->belongsToMany(Condition::class, 'candidate_condition');
     }
+    public function forms() {
+        return $this->belongsToMany(Condition::class, 'candidate_condition');
+    }
 }

@@ -16,4 +16,6 @@ use Illuminate\Http\Request;
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
-Route::resource('/jobOffer','API\JobOfferController');
+Route::resource('/jobOffer','API\JobOfferController')->except(['index']);
+Route::get('/jobOffer/{id?}','API\JobOfferController@index');
+Route::get('/type','API\TypeController@index');

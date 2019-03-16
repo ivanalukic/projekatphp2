@@ -23,7 +23,7 @@ class JobOfferController extends Controller
      $this->helper = new JobOfferHelper();
  }
 
-    public function index()
+    public function index($id=null)
     {
         //ovaj metod ce da gadja ajax back-a i ajax front-a i imace mogucnost filtriranja po zanimanju
         $data=[];
@@ -31,8 +31,6 @@ class JobOfferController extends Controller
         $data['offers']=$this->model->getAll();
         $data['condition']=$conditions->getCond();
         return $data;
-
-
     }
 
     /**

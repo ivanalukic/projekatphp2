@@ -33,6 +33,7 @@ class JobOfferController extends BackController
     public function save(Request $request){
         $helper = new JobOfferHelper();
         $helper->insert($request);
+       return redirect(route('formJobOffer'));
     }
     //napraviti api controller za ovaj metod i klasu helper
     public function getJobOffers($id){

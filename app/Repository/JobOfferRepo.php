@@ -1,52 +1,35 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Ivana
+ * Date: 15.03.2019
+ * Time: 13:02
+ */
 
-namespace App\Models;
-
-use App\Models\dto\JobOfferDto;
-use \Illuminate\Support\Carbon;
-use Illuminate\Database\Eloquent\Model;
-use SoftDeletingTrait;
-
-class JobOffer extends Model
+namespace App\Repository;
+use App\Models\JobOffer;
+use Illuminate\Support\Carbon;
+class JobOfferRepo
 {
-    private $dto;
-
-    public function setDto(JobOfferDto $dto){
-        $this->dto = $dto;
-    }
-    public function getDto(){
-        return $this->dto;
-    }
-    protected $fillable=['name','start_date','end_date','description','is_active'];
-    protected $table = 'job_offers';
-    public function candidates() {
-        return $this->hasMany(Candidate::class);
-    }
-
-//    public function profession() {
-//        return $this->belongsTo(Profession::class);
-//    }
-//
-    public function user() {
-        return $this->belongsTo(User::class);
-    }
-
-    public function conditions() {
-
-        return $this->belongsToMany(Condition::class, 'job_offer_condition');
+    private $model;
+    public function __construct(JobOffer $model)
+    {
+        $this->model=$model;
     }
     //back
     public function insert(){
         try{
-            \DB::transaction(function() {
-            $offer=JobOffer::make(['name'=>$this->dto->name,'start_date'=>$this->dto->start,'end_date'=>$this->dto->end,'description'=>$this->dto->description,'is_active'=>'1']);
-            $offer->profession_id=$this->dto->profession;
-            $offer->user_id=$this->dto->user;
+
+                $offer=JobOffer::make(['name'=>$this->model->getDto()->name,'start_date'=>$this->model->getDto()->start,'end_date'=>$this->model->getDto()->end,'description'=>$this->model->getDto()->description,'is_active'=>'1']);
+                $offer->profession_id=$this->model->getDto()->profession;
+                $offer->user_id=$this->model->getDto()->user;
             $offer->save();
-            foreach ($this->dto->condition as $cond){
-                $offer->conditions()->attach($cond,['created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
-            }});
+                foreach ($this->model->getDto()->condition as $cond){
+                    $offer->conditions()->attach($cond,['created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
+                };
+
         } catch(\Throwable $e) {
+            dd($e);
             \Log::critical("Failed to insert job offers");
             throw new \Exception("Insert error");
         }
@@ -99,8 +82,8 @@ class JobOffer extends Model
     }
     //back id job offer
     public function off_on($id){
-         $offer=JobOffer::find($id);
-         $one=JobOffer::where('id', '=', $id);
+        $offer=JobOffer::find($id);
+        $one=JobOffer::where('id', '=', $id);
         if($offer->is_active){
             //deaktivacija
             $rez=$one->update(array('is_active' => 0));
@@ -121,7 +104,7 @@ class JobOffer extends Model
 
     //back id je id kompanije za koju dohvatamo oglase
     public function getCompanyOffers($id){
-       $offers= \DB::table('job_offers')->select('*','job_offers.id as jobOfferId')->join('users','job_offers.user_id','=','users.id')->where('company_id','=',$id)->get();
+        $offers= \DB::table('job_offers')->select('*','job_offers.id as jobOfferId')->join('users','job_offers.user_id','=','users.id')->where('company_id','=',$id)->get();
         $date=time();
         $rez=array();
         foreach ($offers as $offer){
@@ -133,5 +116,5 @@ class JobOffer extends Model
         }
         return $rez;
     }
-}
 
+}

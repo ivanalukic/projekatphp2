@@ -12,10 +12,6 @@
 */
 
 Route::get('/', 'Front\JobOfferController@getJobOffers');//ovde treba da se gadja novi metod koji radi sa oglasima koji se nalazi u front delu i izvodi se iz front kontrolera
-
-Route::get('/2', function () {
-    return view('layouts.front');
-});
 //ruta koja prikazuje formu za kreiranje oglasa
 Route::get('/createForm/{id?}','Back\JobOfferController@jobOfferForm')->name('createForm');
 //ruta koja menja uslove oglasa kada se promeni profesija
@@ -35,8 +31,8 @@ Route::delete('job_offer/destroy/{id}','Back\JobOfferController@destroy');
 Route::get('/company_job_offers/{id}','Back\CompanyJobOffer@index')->name('company_job_offers');
 
 //ovo su rute koje moram da imam da bi mi se view trenutno prikazivao bez gresaka treba ih popraviti
-Route::get('/all', function () {
-    return view('pages.all_job_offers');
-})->name('all_job_offers');
-
+Route::get('/all','Back\ProfessionController@index')->name('all_job_offers');
+//ovo je ruta za prikaz forme za prijavu na oglas
+Route::get('/form/job_offer/{id?}',function (){return view('pages.Form.form_job_offer');})->name('formJobOffer');
+Route::resource('/formFields','Back\FormController');
 

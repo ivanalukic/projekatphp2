@@ -76,13 +76,13 @@
                         </div>
                         <div class="col col-md-9">
                             <div class="form-check" id="view">
-                                @foreach($cond as $c)
-                                <div class="checkbox">
-                                    <label for="checkbox{{$c->id}}" class="form-check-label ">
-                                        <input type="checkbox" name="checked[]" id="checkbox{{$c->id}}" name="checkbox{{$c->id}}" value="{{$c->id}}" class="form-check-input">{{$c->name}}
-                                    </label>
-                                </div>
-                                @endforeach
+                                {{--@foreach($cond as $c)--}}
+                                {{--<div class="checkbox">--}}
+                                    {{--<label for="checkbox{{$c->id}}" class="form-check-label ">--}}
+                                        {{--<input type="checkbox" name="checked[]" id="checkbox{{$c->id}}" name="checkbox{{$c->id}}" value="{{$c->id}}" class="form-check-input">{{$c->name}}--}}
+                                    {{--</label>--}}
+                                {{--</div>--}}
+                                {{--@endforeach--}}
                             </div>
                         </div>
                     </div>
