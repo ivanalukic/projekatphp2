@@ -53,7 +53,13 @@ class JobOfferController extends Controller
      */
     public function show($id)
     {
-       //
+        $joboffer=new JobOffer();
+        $conditions=new Condition();
+        $data=[];
+        $data['offers']=$joboffer->getActive($id);
+        $data['offOffers']=$joboffer->getInactive($id);
+        $data['condition']=$conditions->getCond();
+        return response($data);
     }
 
     /**

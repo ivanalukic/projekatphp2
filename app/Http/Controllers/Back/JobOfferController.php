@@ -32,18 +32,11 @@ class JobOfferController extends BackController
     }
     public function save(Request $request){
         $helper = new JobOfferHelper();
-        $helper->insert($request);
-       return redirect(route('formJobOffer'));
+        $rez=$helper->insert($request);
+       return redirect(route('formJobOffer',$rez));
     }
-    //napraviti api controller za ovaj metod i klasu helper
     public function getJobOffers($id){
-        $joboffer=new JobOffer();
-        $conditions=new Condition();
-        $data=[];
-        $data['offers']=$joboffer->getActive($id);
-        $data['offOffers']=$joboffer->getInactive($id);
-        $data['condition']=$conditions->getCond();
-        return view('pages.my_job_offers',$data);
+        return view('pages.my_job_offers');
     }
     public function edit($id){
         $joboffer=new JobOffer();

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Candidate extends Model
 {
+    protected $fillable = [
+        'first_name','job_offer_id','last_name','email','cv_file'
+    ];
     public function offer() {
         return $this->belongsTo(JobOffer::class);
     }

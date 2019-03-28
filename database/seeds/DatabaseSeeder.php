@@ -21,6 +21,10 @@ class DatabaseSeeder extends Seeder
             TasksTableSeeder::class,
             JobOffersTableSeeder::class,
             ConditionTableSeeder::class,
+            TypesTableSeeder::class,
+            FieldsTableSeeder::class,
+            FormsTableSeeder::class,
+            OptionsTableSeeder::class,
             RatingsTableSeeder::class
         ]);
     }

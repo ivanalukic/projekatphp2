@@ -12,6 +12,11 @@
     </li>
 @endsection
 @section('content')
+    @if(session()->has('msg'))
+        <div class="alert alert-danger" role="alert">
+            {{session()->get('msg')}}
+        </div>
+    @endif
     <div class="main-content container">
         <div class="section__content section__content--p30">
             <div class="container-fluid d-flex justify-content-center">
@@ -70,7 +75,8 @@
                                     @endforeach
                             </select>
                         </div>
-                    </div><div class="row form-group">
+                    </div>
+                    <div class="row form-group">
                         <div class="col col-md-3">
                             <label class=" form-control-label">Conditions</label>
                         </div>
@@ -109,4 +115,31 @@
     </div>
     </div>
     </div>
+@endsection
+@section('script')
+    <script>
+    function change(){
+              let lista=document.getElementById("selected");
+              let selektovani=lista.selectedIndex;
+              let vrednost=lista.options[selektovani].value;
+
+              $.ajax({
+              url: baseUrl+"createForm/profession/"+vrednost,
+    method: 'get',
+    dataType: "json",
+    success: function(data){
+    let ispis='';
+    $.each(data,function (i,podatak) {
+    ispis+=`<div class="checkbox">
+        <label for="checkbox" class="form-check-label ">
+            <input type="checkbox" name="checked[]" id="checkbox${podatak.id}" name="checkbox${podatak.id}}" value="${podatak.id}" class="form-check-input">${podatak.name}
+        </label>
+    </div>`;
+    })
+    $('#view').html(ispis);
+    },
+    error:function (xhr,status,msg) {
+    }
+    });
+    }</script>
 @endsection

@@ -25,6 +25,9 @@ class Condition extends Model
         if($id){
             return Profession::find($id)->conditions()->get();
         }
+        else{
+            return Profession::all();
+        }
     }
     public function getCond(){
 //        $niz=[];
@@ -36,4 +39,7 @@ class Condition extends Model
 //        return $niz;
         return\DB::table('conditions')->join('job_offer_condition','conditions.id','=','job_offer_condition.condition_id')->get();
     }
+    public function getConditions($id){
+        return JobOffer::find($id)->conditions()->get();
+}
 }

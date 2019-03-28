@@ -36,8 +36,12 @@
 </head>
 
 <body class="animsition">
+<script>
+    let asset="{{asset('/')}}"
+</script>
 <div class="page-wrapper">
 @include('inc.header')
+    @include('inc.hamburger')
     <div class="page-container3">
 @yield('content')
 @include('inc.end')

@@ -16,12 +16,8 @@ use App\Models\Profession;
 class JobOfferController extends FrontController
 {
     public function getJobOffers(){
-        $joboffer=new JobOffer();
-        $conditions=new Condition();
-        $rez=$joboffer->getAll();
-        $cond=$conditions->getCond();
         $prof=new Profession();
         $niz=$prof->getProfessions();
-        return view('pagesFront.all_job_offers',['offers'=>$rez,'condition'=>$cond,'professions'=>$niz]);
+        return view('pagesFront.all_job_offers',['professions'=>$niz]);
     }
 }

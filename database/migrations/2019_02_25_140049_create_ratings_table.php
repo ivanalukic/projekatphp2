@@ -16,14 +16,12 @@ class CreateRatingsTable extends Migration
         Schema::create('ratings', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('form_field_id');
-            $table->foreign('form_field_id')->references('id')->on('form_field');
+            $table->foreign('form_field_id')->references('id')->on('form_field')->onDelete('cascade');
             $table->unsignedInteger('candidate_id');
-            $table->foreign('candidate_id')->references('id')->on('candidates');
+            $table->foreign('candidate_id')->references('id')->on('candidates')->onDelete('cascade');
             $table->string('value');
             $table->integer('rating')->nullable();
             $table->timestamps();
-
-            $table->unique(['form_field_id', 'candidate_id']);
         });
     }
 

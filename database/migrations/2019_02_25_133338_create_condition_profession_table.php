@@ -16,9 +16,9 @@ class CreateConditionProfessionTable extends Migration
         Schema::create('condition_profession', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('condition_id');
-            $table->foreign('condition_id')->references('id')->on('conditions');
+            $table->foreign('condition_id')->references('id')->on('conditions')->onDelete('cascade');
             $table->unsignedInteger('profession_id');
-            $table->foreign('profession_id')->references('id')->on('professions');
+            $table->foreign('profession_id')->references('id')->on('professions')->onDelete('cascade');
             $table->timestamps();
 
             $table->unique(['condition_id', 'profession_id']);

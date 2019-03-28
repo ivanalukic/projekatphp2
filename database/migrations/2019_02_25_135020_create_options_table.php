@@ -17,7 +17,7 @@ class CreateOptionsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->unsignedInteger('field_id');
-            $table->foreign('field_id')->references('id')->on('fields');
+            $table->foreign('field_id')->references('id')->on('fields')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -25,7 +25,7 @@
 
 <!-- Main JS-->
 <script src="{{asset('/')}}js/main.js"></script>
-<script src="{{asset('/')}}js/job_offer.js"></script>
+<script>let baseUrl="http://localhost/ProjekatZaSkolu/public/";</script>
 @yield('script')
 
 </body>

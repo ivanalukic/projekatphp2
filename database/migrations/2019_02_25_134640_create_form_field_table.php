@@ -16,9 +16,9 @@ class CreateFormFieldTable extends Migration
         Schema::create('form_field', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('form_id');
-            $table->foreign('form_id')->references('id')->on('forms');
+            $table->foreign('form_id')->references('id')->on('forms')->onDelete('cascade');
             $table->unsignedInteger('field_id');
-            $table->foreign('field_id')->references('id')->on('fields');
+            $table->foreign('field_id')->references('id')->on('fields')->onDelete('cascade');
             $table->timestamps();
 
             $table->unique(['form_id', 'field_id']);

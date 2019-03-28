@@ -10,4 +10,16 @@ class Company extends Model
 //    {
 //        return $this->hasMany(User::class);
 //    }
+    public static function boot()
+    {
+        parent::boot();
+        static::creating(function($model) {
+            $model->generateHash();
+        });
+    }
+    protected function generateHash()
+    {
+        $random_bytes = md5(uniqid(mt_rand(), true));
+        $this->api_token = $random_bytes;
+    }
 }

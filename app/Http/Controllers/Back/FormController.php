@@ -16,9 +16,10 @@ class FormController extends BackController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index($id=null)
+    {          // dd($id);
+        return view('pages.Form.form_job_offer',['id'=>$id]);
+
     }
 
     /**
@@ -62,14 +63,17 @@ class FormController extends BackController
                       $option->options=$options;
                       try{
                           $repo->insertOption($option,$rez);
+
                       }catch (\Exception $e){
                           \Log::error($e->getMessage());
+                          return redirect('/all')->with(['msg'=>'Create fail']);
                       }
 
                   }
 
                 }
             }
+        return redirect('/all')->with(['msg'=>'Successful create']);
     }
 
     /**

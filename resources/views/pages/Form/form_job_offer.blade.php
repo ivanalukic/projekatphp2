@@ -5,7 +5,7 @@
     <div class="main-content">
 <form action="{{route('formFields.store')}}" method="post" id="forma">
 @csrf
-    <input type="hidden" name="formId" value="1">
+    <input type="hidden" name="formId" value="{{$id}}">
     <br/>
     <input type="submit" name="submit" id="" value="Create form fields" class="form-control btn-primary">
 </form>

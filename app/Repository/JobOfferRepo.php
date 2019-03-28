@@ -7,6 +7,7 @@
  */
 
 namespace App\Repository;
+use App\Models\Form;
 use App\Models\JobOffer;
 use Illuminate\Support\Carbon;
 class JobOfferRepo
@@ -27,9 +28,10 @@ class JobOfferRepo
                 foreach ($this->model->getDto()->condition as $cond){
                     $offer->conditions()->attach($cond,['created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
                 };
-
+                $offer->save();
+               $form= Form::create(['job_offer_id'=>$offer->id,'name'=>$offer->name,'created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
+                return $form->id;
         } catch(\Throwable $e) {
-            dd($e);
             \Log::critical("Failed to insert job offers");
             throw new \Exception("Insert error");
         }

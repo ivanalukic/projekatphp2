@@ -25,8 +25,10 @@
     let csrf="{{csrf_token()}}";
 </script>
 <div class="page-wrapper">
-@include('inc.header2')
+    @include('inc.hamburger2')
+    @include('inc.sidebar')
 <div class="page-container">
+@include('inc.header2')
+
 @yield('content')
-@include('inc.sidebar')
 @include('inc.end')

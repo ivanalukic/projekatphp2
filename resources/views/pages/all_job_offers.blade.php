@@ -46,11 +46,60 @@ function Offers() {
             method: 'get',
             dataType: "json",
             success: function(data){
-                //console.log(data);
-                let ispis='';
                 conditions=data.condition;
                 offers=data.offers;
-                for(o of offers) {
+                generateOffer();
+            },
+            error:function (xhr,status,msg) {
+            }
+        });
+    }
+    function filtrated(id) {
+        $.ajax({
+            url: baseUrl+"api/jobOffer",
+            method: 'get',
+            dataType: "json",
+            success: function(data){
+                conditions=data.condition;
+                offers=data.offers;
+                generateOffer();
+            },
+            error:function (xhr,status,msg) {
+            }
+        });
+    }
+    function generateOffer(id=0) {
+        let ispis='';
+        for(o of offers) {
+            if(id==0){
+                ispis += `<a href="#" style="color: #666666;"class="col-md-12 col-lg-6">
+                    <div class="card-header">
+                    <strong class="card-title mb-3">${o.name}</strong>
+                    </div>
+                    <div class="statistic__item">
+                    <div class="text text-black">
+                    <span>
+                        ${o.description}
+                    </span>
+                    <br/>
+                    <strong class="card-title mb-3">Conditions:</strong>
+                <span>
+                <br/>`
+                for(c of conditions){
+                    if(c.job_offer_id==o.id){
+                        ispis+=`${c.name}`
+                    }
+                }
+                ispis+=`
+                </span>
+                </div>
+                <div class="icon">
+                    <i class="zmdi zmdi-calendar-note"></i>
+                    </div>
+                    </div>
+                    </a>`
+            }else if(id>0){
+                if(o.profession_id==id){
                     ispis += `<a href="#" style="color: #666666;"class="col-md-12 col-lg-6">
                     <div class="card-header">
                     <strong class="card-title mb-3">${o.name}</strong>
@@ -78,19 +127,19 @@ function Offers() {
                     </div>
                     </a>`
                 }
-                let div=document.getElementById('show');
-                div.innerHTML=ispis;
-
-            },
-            error:function (xhr,status,msg) {
             }
-        });
-    }
-    return all();
-}
-let module = Offers()
-$(document).ready(function () {
 
+    }
+        let div=document.getElementById('show');
+        div.innerHTML=ispis;
+
+    }
+    return{ all,
+        generateOffer
+    }
+}
+let module = Offers();
+$(document).ready(function () {
   module.all();
 })
 
@@ -98,7 +147,7 @@ function select(){
     let lista=document.getElementById("prof");
     let selektovani=lista.selectedIndex;
     let vrednost=lista.options[selektovani].value;
-    console.log(vrednost)
+    module.generateOffer(vrednost);
 }
 </script>
 @endsection

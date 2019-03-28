@@ -19,6 +19,7 @@ class CreateCompaniesTable extends Migration
 //          $table->text('description');
 //          $table->string('address')->nullable();
 //          $table->string('phone')->nullable();
+            $table->string('api_token')->unique();
             $table->timestamps();
         });
     }
