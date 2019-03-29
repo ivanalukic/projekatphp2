@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
@@ -10,13 +9,17 @@ class LogInController extends Controller
 {
     public function logIn(Request $request){
         $client = new Client();
-        $client = new Client();
-        $response=$client->post('http://localhost/CompanyManager-master/public/api/auth',[
+        $response=$client->post('http://localhost:8000/api/auth',[ 'form_params' => [
             'email'=>$request->email,
-            'password'=>$request->password
+            'password'=>$request->password]
         ]);
 
+        $user = json_decode($response->getBody());
+        session()->put('user', $user);
+        return redirect('/');
+    }
 
-        dd($response);
+    public function loginForm() {
+        return view('auth.login');
     }
 }

@@ -18,13 +18,18 @@
 
     <div class="main-content">
         <div class="section__content section__content--p30">
-            <div class="row m-t-25" id="show">
-            </div>
             @if(session()->has('msg'))
                 <div class="alert alert-success" role="alert">
                     {{session()->get('msg')}}
                 </div>
             @endif
+                @if(session()->has('error'))
+                    <div class="alert alert-danger" role="alert">
+                        {{session()->get('error')}}
+                    </div>
+                @endif
+            <div class="row m-t-25" id="show">
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">

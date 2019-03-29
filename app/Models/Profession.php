@@ -8,7 +8,7 @@ class Profession extends Model
 {
 
 //    public function offers() {
-//        return $this->hasMany(JobOffer::class);
+//        return $this->hasMany(JobOfferRequest::class);
 //    }
 
     public function conditions() {

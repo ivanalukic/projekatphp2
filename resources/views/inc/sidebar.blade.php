@@ -15,7 +15,7 @@
                     </li>
                     <li class="">
                         {{--ovde je id mail kompanije--}}
-                        <a href="{{route('company_job_offers',['id'=>1])}}">
+                        <a href="{{route('company_job_offers',['id'=>\Illuminate\Support\Facades\Session::get('user')['company_id']])}}">
                             <i class="fas fa-thumbtack"></i>Job offers
                         </a>
                     </li>

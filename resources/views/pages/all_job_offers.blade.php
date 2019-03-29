@@ -17,6 +17,11 @@
 <!-- MAIN CONTENT-->
 <div class="main-content">
     <div class="section__content section__content--p30">
+        @if(session()->has('error'))
+            <div class="alert alert-danger" role="alert">
+                {{session()->get('error')}}
+            </div>
+        @endif
             <div class="row m-t-25" id="show">
 
             </div>

@@ -17,6 +17,6 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 Route::resource('/jobOffer','API\JobOfferController')->except(['index','show']);
-Route::get('/jobOffer/{id}','API\JobOfferController@show');
+Route::get('/jobOffer/{id}','API\JobOfferController@show')->name('show');
 Route::get('/jobOffer/{id?}','API\JobOfferController@index');
 Route::get('/type','API\TypeController@index');

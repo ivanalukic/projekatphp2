@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\API;
 
 use App\Helpers\JobOfferHelper;
+use App\Http\Requests\JobOfferRequest;
 use App\Models\Condition;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\JobOffer;
+use Illuminate\Support\Facades\Session;
 
 class JobOfferController extends Controller
 {
@@ -39,10 +41,10 @@ class JobOfferController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(JobOfferRequest $request)
     {
-        $this->helper->insert($request);
-        return response(['message'=>'Success'],201);
+//        $this->helper->insert($request);
+//        return response(['message'=>'Success'],201);
     }
 
     /**

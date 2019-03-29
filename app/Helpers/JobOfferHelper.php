@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ivana
+ * User: LogIn
  * Date: 06.03.2019
  * Time: 17:39
  */
@@ -13,13 +13,14 @@ use App\Models\dto\JobOfferDto;
 use App\Models\JobOffer;
 use App\Repository\JobOfferRepo;
 use Illuminate\Http\Request;
+use App\Http\Requests\JobOfferRequest;
 
 class JobOfferHelper
 {
-    public function insert(Request $request)
+    public function insert(JobOfferRequest $request,$id)
     {
         $jobOffer=new JobOffer();
-        $jobOfferDto = new JobOfferDto($request);
+        $jobOfferDto = new JobOfferDto($request,$id);
         $jobOffer->setDto($jobOfferDto);
         $offer=new JobOfferRepo($jobOffer);
         return $offer->insert();

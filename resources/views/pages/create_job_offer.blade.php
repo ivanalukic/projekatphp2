@@ -1,12 +1,12 @@
 @extends('layouts.back')
 @section('menu')
     <li class=" has-sub">
-        <a href="{{route('myOffers',['id'=>'1'])}}">
+        <a href="{{route('myOffers',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}">
             <i class="fas fa-clipboard-list"></i>My job offers
         </a>
     </li>
     <li class="">
-        <a href="{{route('createForm')}}">
+        <a href="{{route('createForm',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}">
             <i class="far fa-plus-square"></i>Create job offer
         </a>
     </li>
@@ -26,7 +26,7 @@
                 <strong style="font-size: 20px;">Create your job offer</strong>
             </div>
             <div class="card-body card-block">
-                <form action="{{route('createJobOffer')}}" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <form action="{{route('createJobOffer',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}" method="post" enctype="multipart/form-data" class="form-horizontal">
                     @csrf
                     <div class="row form-group">
                         <div class="col col-md-3">
@@ -105,6 +105,15 @@
             </div>
         </div>
     </div>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="row">
         <div class="col-md-12">
             <div class="copyright">

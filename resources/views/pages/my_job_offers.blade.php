@@ -1,12 +1,12 @@
 @extends('layouts.back')
 @section('menu')
     <li class=" has-sub">
-        <a href="{{route('myOffers',['id'=>'1'])}}">
+        <a href="{{route('myOffers',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}">
             <i class="fas fa-clipboard-list"></i>My job offers
         </a>
     </li>
     <li class="">
-        <a href="{{route('createForm')}}">
+        <a href="{{route('createForm',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}">
             <i class="far fa-plus-square"></i>Create job offer
         </a>
     </li>
@@ -106,7 +106,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="copyright">
+                    <div class="copyright" data-id="{{\Illuminate\Support\Facades\Session::get('user')['id']}}" id="user">
                         <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
             let offOffers=[];
             function all() {
                 $.ajax({
-                    url: baseUrl+"api/jobOffer/1",
+                    url: baseUrl+"api/jobOffer/"+user,
                     method: 'get',
                     dataType: "json",
                     success: function(data){
@@ -231,6 +231,7 @@
             }
         }
         let module = Offers();
+        let user=$('#user').data('id');
         $(document).ready(function () {
             module.all();
         })

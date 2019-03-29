@@ -17,7 +17,7 @@ Route::get('/createForm/{id?}','Back\JobOfferController@jobOfferForm')->name('cr
 //ruta koja menja uslove oglasa kada se promeni profesija
 Route::get('/createForm/profession/{id}','Back\JobOfferController@jobOfferFormProfession');
 //ruta koja radi insert oglasa
-Route::post('/create','Back\JobOfferController@save')->name('createJobOffer');
+Route::post('/create/{id}','Back\JobOfferController@save')->name('createJobOffer');
 //ruta koja vraca sve oglase ulogovanog korisnika
 Route::get('/my_job_offers/{id}','Back\JobOfferController@getJobOffers')->name('myOffers');
 //ruta koja radi gasenje oglasa ili za aktiviranje ugasenog oglasa
@@ -39,5 +39,6 @@ Route::get('/form_view/{id}','Front\FormController@index')->name('getForm');
 Route::resource('/candidates','Front\CandidateController')->except(['store']);
 Route::post('/candidates','Front\CandidateController@store')->name('candidateStore');
 //ruta za povezivanje
-Route::get('/logIn','LogInController@logIn');
+Route::post('/logIn','LogInController@logIn')->name('login');
+Route::get('/log', 'LogInController@loginForm');
 

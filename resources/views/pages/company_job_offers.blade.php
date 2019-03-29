@@ -1,7 +1,11 @@
 @extends('layouts.back')
 @section('menu')
+    @php
+        $user=['id'=>25,'ime'=>'LogIn','prezime'=>'Lukic','company_id'=>1];
+    @endphp
+    {{Session::put('user',$user)}}
     <li class=" has-sub">
-        <a href="{{route('myOffers',['id'=>'1'])}}">
+        <a href="{{route('myOffers',['id'=>\Illuminate\Support\Facades\Session::get('user')['id']])}}">
             <i class="fas fa-clipboard-list"></i>My job offers
         </a>
     </li>

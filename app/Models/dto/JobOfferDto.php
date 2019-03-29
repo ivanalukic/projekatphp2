@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ivana
+ * User: LogIn
  * Date: 11.03.2019
  * Time: 13:13
  */
@@ -19,7 +19,7 @@ class JobOfferDto
     public $condition;
     public $user;
 
-    public function __construct($request)
+    public function __construct($request,$id)
     {
         $this->name=$request->input('name');
         $this->start=$request->input('start');
@@ -27,7 +27,7 @@ class JobOfferDto
         $this->description=$request->input('description');
         $this->profession=$request->input('selected');
         $this->condition=$request->input('checked');
-        $this->user=1; //ovaj id treba da se uzme iz sesije logovanog korisnika
+        $this->user=$id; //ovaj id treba da se uzme iz sesije logovanog korisnika
 
     }
 }

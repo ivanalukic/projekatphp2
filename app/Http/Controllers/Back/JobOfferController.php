@@ -8,7 +8,9 @@ use App\Models\JobOffer;
 use App\Models\Profession;
 use http\Client\Response;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Psy\Util\Json;
+use App\Http\Requests\JobOfferRequest;
 
 class JobOfferController extends BackController
 {
@@ -30,9 +32,14 @@ class JobOfferController extends BackController
       $cond=$conditions->formCondition($id);
       return Json::encode($cond);
     }
-    public function save(Request $request){
+    public function save(JobOfferRequest $request,$id){
         $helper = new JobOfferHelper();
-        $rez=$helper->insert($request);
+        try{
+        $rez=$helper->insert($request,$id);}
+        catch (\Exception $e){
+            \Log::error($e->getMessage());
+            return  redirect('/all')->with(['error'=>'Fail insert, try again']);
+        }
        return redirect(route('formJobOffer',$rez));
     }
     public function getJobOffers($id){

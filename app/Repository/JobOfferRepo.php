@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ivana
+ * User: LogIn
  * Date: 15.03.2019
  * Time: 13:02
  */
@@ -32,7 +32,7 @@ class JobOfferRepo
                $form= Form::create(['job_offer_id'=>$offer->id,'name'=>$offer->name,'created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
                 return $form->id;
         } catch(\Throwable $e) {
-            \Log::critical("Failed to insert job offers");
+            \Log::critical($e->getMessage());
             throw new \Exception("Insert error");
         }
 
